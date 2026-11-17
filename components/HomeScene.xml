@@ -1,12 +1,60 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <component name="HomeScene" extends="Scene">
     <children>
+        <Rectangle
+            width="1280"
+            height="720"
+            color="#100B1FFF" />
+
         <Label
             id="title"
             text="VYRO PLAYER"
-            translation="[500,300]"
-            font="font:LargeBoldSystemFont"
-        />
+            translation="[80,55]"
+            width="1120"
+            height="80"
+            color="#A78BFA"
+            font="font:LargeBoldSystemFont" />
+
+        <Label
+            text="SEU ENTRETENIMENTO EM UM SO LUGAR"
+            translation="[85,135]"
+            width="1100"
+            height="45"
+            color="#FFFFFFFF"
+            font="font:MediumSystemFont" />
+
+        <Label
+            text="TV AO VIVO"
+            translation="[100,250]"
+            width="500"
+            height="65"
+            color="#39E58C"
+            font="font:LargeBoldSystemFont" />
+
+        <Label
+            text="FILMES"
+            translation="[100,340]"
+            width="500"
+            height="65"
+            color="#FFFFFFFF"
+            font="font:LargeBoldSystemFont" />
+
+        <Label
+            text="SERIES"
+            translation="[100,430]"
+            width="500"
+            height="65"
+            color="#FFFFFFFF"
+            font="font:LargeBoldSystemFont" />
+
+        <Label
+            text="CONFIGURACOES"
+            translation="[100,520]"
+            width="600"
+            height="65"
+            color="#FFFFFFFF"
+            font="font:LargeBoldSystemFont" />
     </children>
 </component>
