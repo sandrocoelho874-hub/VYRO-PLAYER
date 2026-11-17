@@ -1,0 +1,25 @@
+name: Criar ZIP do VYRO PLAYER
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar arquivos
+        uses: actions/checkout@v4
+
+      - name: Preparar ZIP
+        run: |
+          zip -r VYRO_PLAYER_Roku.zip manifest source components
+
+      - name: Guardar arquivo ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: VYRO_PLAYER_Roku
+          path: VYRO_PLAYER_Roku.zip
